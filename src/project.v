@@ -23,12 +23,12 @@ module tt_um_example (
 
   Lut #(
     .INPUTS(2)
-  ) lut (
+  ) my_lut (
     .clock(clk),
     .rst_n(rst_n),
     .in(ui_in[1:0]),
     .conf(uio_in),
-    .out(uio_out[0])
+    .out(uo_out[0])
   );
 
   assign uo_out[7:1] = 0;
